@@ -46,7 +46,7 @@ grunt.loadNpmTasks('grunt-geckodriver');
 Add use the task to start and stop the browser driver before and after the tests:
 
 ```js
-grunt.registerTask('default', ['geckodriver;default:start', ..., 'geckodriver;default:stop']);
+grunt.registerTask('default', ['geckodriver:default:start', ..., 'geckodriver:default:stop']);
 ```
 
 ### Options
