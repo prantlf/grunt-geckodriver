@@ -2,6 +2,7 @@
 [![NPM version](https://badge.fury.io/js/grunt-geckodriver.png)](http://badge.fury.io/js/grunt-geckodriver)
 [![Build Status](https://travis-ci.org/prantlf/grunt-geckodriver.png)](https://travis-ci.org/prantlf/grunt-geckodriver)
 [![codecov](https://codecov.io/gh/prantlf/grunt-geckodriver/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/grunt-geckodriver)
+[![codebeat badge](https://codebeat.co/badges/1d016503-df5e-41ac-9625-66bb238e236b)](https://codebeat.co/projects/github-com-prantlf-grunt-geckodriver-master)
 [![Dependency Status](https://david-dm.org/prantlf/grunt-geckodriver.svg)](https://david-dm.org/prantlf/grunt-geckodriver)
 [![devDependency Status](https://david-dm.org/prantlf/grunt-geckodriver/dev-status.svg)](https://david-dm.org/prantlf/grunt-geckodriver#info=devDependencies)
 [![peerDependency Status](https://david-dm.org/prantlf/grunt-geckodriver/peer-status.svg)](https://david-dm.org/prantlf/grunt-geckodriver#info=peerDependencies)
