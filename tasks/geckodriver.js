@@ -73,10 +73,12 @@ module.exports = grunt => {
           .then(({ args, port }) => {
             usedPort = port
             grunt.config.set(`geckodriver.${target}.port`, port)
+            grunt.log.writeln(`Starting GeckoDriver ${geckodriver.version} on port ${port}`)
             geckodriver.start(args)
             return tcpPortUsed.waitUntilUsed(port, 200, 10000)
           })
           .then(() => {
+            grunt.log.writeln('GeckoDriver was started successfully.')
             grunt.event.emit(`geckodriver.${target}.listening`, usedPort)
             process.on('exit', stop)
           })
