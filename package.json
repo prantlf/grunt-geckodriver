@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "geckodriver": "1.20.0",
-    "portscanner": "^2.2.0",
+    "portscanner": "2.2.0",
     "tcp-port-used": "1.0.1"
   },
   "devDependencies": {
