@@ -4,7 +4,7 @@ node_js:
   - lts/*
   - 10
 addons:
-  firefox: stable
+  firefox: latest
 cache:
   npm: false
   directories:
