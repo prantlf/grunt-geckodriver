@@ -1,13 +1,10 @@
 # grunt-geckodriver
-[![NPM version](https://badge.fury.io/js/grunt-geckodriver.png)](http://badge.fury.io/js/grunt-geckodriver)
-[![Build Status](https://travis-ci.org/prantlf/grunt-geckodriver.png)](https://travis-ci.org/prantlf/grunt-geckodriver)
-[![codecov](https://codecov.io/gh/prantlf/grunt-geckodriver/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/grunt-geckodriver)
-[![codebeat badge](https://codebeat.co/badges/1d016503-df5e-41ac-9625-66bb238e236b)](https://codebeat.co/projects/github-com-prantlf-grunt-geckodriver-master)
-[![Dependency Status](https://david-dm.org/prantlf/grunt-geckodriver.svg)](https://david-dm.org/prantlf/grunt-geckodriver)
-[![devDependency Status](https://david-dm.org/prantlf/grunt-geckodriver/dev-status.svg)](https://david-dm.org/prantlf/grunt-geckodriver#info=devDependencies)
-[![peerDependency Status](https://david-dm.org/prantlf/grunt-geckodriver/peer-status.svg)](https://david-dm.org/prantlf/grunt-geckodriver#info=peerDependencies)
 
-[![NPM Downloads](https://nodei.co/npm/grunt-geckodriver.png?downloads=true&stars=true)](https://www.npmjs.com/package/grunt-geckodriver)
+[![Latest version](https://img.shields.io/npm/v/grunt-geckodriver)
+ ![Dependency status](https://img.shields.io/librariesio/release/npm/grunt-geckodriver)
+](https://www.npmjs.com/package/grunt-geckodriver)
+[![Coverage](https://codecov.io/gh/prantlf/grunt-geckodriver/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/grunt-geckodriver)
+[![codebeat badge](https://codebeat.co/badges/1777e780-ea70-4ebd-8f5a-df278c5761d6)](https://codebeat.co/projects/github-com-prantlf-grunt-geckodriver-master)
 
 Controls Firefox using the WebDriver interface via geckodriver without Selenium.
 

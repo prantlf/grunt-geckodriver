@@ -1,7 +1,6 @@
 'use strict'
 
 module.exports = function (grunt) {
-  const coverage = grunt.option('coverage')
   const alternativePort = '4446'
 
   grunt.initConfig({
@@ -24,27 +23,6 @@ module.exports = function (grunt) {
       }
     },
 
-    instrument: {
-      files: 'tasks/**/*.js',
-      options: {
-        lazy: true,
-        basePath: 'coverage/'
-      }
-    },
-
-    storeCoverage: {
-      options: { dir: 'coverage' }
-    },
-
-    makeReport: {
-      src: 'coverage/coverage.json',
-      options: {
-        type: 'lcov',
-        dir: 'coverage',
-        print: 'detail'
-      }
-    },
-
     nodeunit: {
       started: ['test/started.js'],
       stopped: ['test/stopped.js']
@@ -52,24 +30,20 @@ module.exports = function (grunt) {
   })
 
   grunt.loadNpmTasks('grunt-contrib-nodeunit')
-  grunt.loadNpmTasks('grunt-istanbul')
-  grunt.loadNpmTasks('grunt-standard')
-  grunt.loadTasks(coverage ? 'coverage/tasks' : 'tasks')
+  grunt.loadTasks('tasks')
 
   process.env.GECKODRIVER_PORT = undefined
   grunt.registerTask('switchPort', 'Grunt task switching the geckodriver port.', function () {
     process.env.GECKODRIVER_PORT = alternativePort
   })
 
-  let test = [
-    'standard', 'nodeunit:stopped', 'geckodriver:quiet:start',
+  grunt.registerTask('default', [
+    'nodeunit:stopped', 'geckodriver:quiet:start',
     'nodeunit:started', 'geckodriver:quiet:stop',
     'nodeunit:stopped', 'geckodriver:verbose:start', 'switchPort',
     'nodeunit:started', 'geckodriver:verbose:stop', 'nodeunit:stopped',
     'geckodriver:anotherPort:start', 'nodeunit:started',
     'geckodriver:anotherPort:stop', 'nodeunit:stopped',
     'geckodriver:otherPort:start', 'nodeunit:started'
-  ]
-  if (coverage) test = test.concat(['storeCoverage', 'makeReport'])
-  grunt.registerTask('default', test)
+  ])
 }
