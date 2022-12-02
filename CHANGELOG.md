@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/prantlf/grunt-geckodriver/compare/v0.0.4...v0.0.5) (2022-12-02)
+
+
+### Bug Fixes
+
+* Upgrade chromedriver to 3 ([1ce8975](https://github.com/prantlf/grunt-geckodriver/commit/1ce8975261f7226efd2ddfd25f393d2c6c5a8417))
+
 ## [0.0.4](https://github.com/prantlf/grunt-geckodriver/compare/v0.0.3...v0.0.4) (2022-06-14)
 
 ### Bug Fixes

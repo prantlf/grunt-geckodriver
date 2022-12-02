@@ -1,7 +1,7 @@
 {
   "name": "grunt-geckodriver",
   "description": "Controls Firefox using the WebDriver interface via geckodriver without Selenium.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/prantlf/grunt-geckodriver#readme",
   "author": {
     "name": "Ferdinand Prantl",
