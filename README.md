@@ -125,7 +125,7 @@ your code using Grunt.
 
 ## License
 
-Copyright (c) 2020-2022 Ferdinand Prantl
+Copyright (c) 2020-2023 Ferdinand Prantl
 
 Licensed under the MIT license.
 
