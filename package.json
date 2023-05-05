@@ -31,7 +31,7 @@
   "scripts": {
     "lint": "denolint",
     "check": "grunt",
-    "test": "denolint && c8 grunt"
+    "test": "c8 grunt"
   },
   "c8": {
     "include": [
